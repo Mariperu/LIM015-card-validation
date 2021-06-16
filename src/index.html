@@ -3,12 +3,74 @@
   <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" /> <!--Link a css-->
+
+    <!-- link a google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Lato&display=swap" rel="stylesheet">
+
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+    <header>
+      <img src="src/logo.png" alt="logo">
+    </header>
+    <section class ="section">
+<!--CONTAINER 1-->
+    <div class="container" id="container1">
+      <form id="form1">
+      <h1>Activa tu tarjeta de Crédito</h1>
+      <h2>Nombre y apellido:</h2>
+        <input class="input" type="text"  id="name"
+        placeholder="Ingresa tu nombre y apellido aquí" maxlength="20"><br/>
+          
+      <h2>Número de DNI:</h2>
+        <input class="input" type="text"  id="dni"
+        placeholder="Ingresa tu DNI aquí" maxlength="8"><br/>
+    
+      <h2>Número de tarjeta de crédito :</h2>
+        <input class="input" type="text" id="tcId"
+        placeholder="Ingresa número de tajeta" 
+        maxlength="16"><br/>
+
+        <br><button class="button" type = "button" id="validationB">VALIDAR</button><br/>
+
+        <br><button class="buttonClear" type="reset">Limpiar</button><br/>
+      </form>
+    </div>  
+ <!--CONTAINER 2-->  
+    <div hidden class="container" id="container2">
+      <form id="form2">
+      <h1 id = "onlyName"></h1>  
+      <h4>La tarjeta:</h4>  
+      <h3 id = "banks"></h3>
+      <h3 id = "msValid"></h3>
+      <h4>es:</h4>
+      <h3>VÁLIDA</h3>
+
+      <p>Para continuar con la activación, 
+        por favor ingresa la clave que llegó a tu celular:</p>
+      <input class="input" type="password" id="key"
+        placeholder="Clave" maxlength="4"><br/>
+      
+
+      <br><button class= "button" type = "button" id="sent">ENVIAR</button><br/>
+      <br><button class="buttonClear" type="reset">Limpiar</button><br/>
+      </form>
+    </div>   
+<!--CONTAINER 3-->
+    <div hidden class="container" id="container3">
+      <h3></h3>
+      <h3>¡Felicitaciones!</h3>
+      <h1>Se activó tu tarjeta de crédito</h1>
+      <h3> &#127873; Línea de crédito:</h3>
+      <p1 id="line"></p1>
+
+      <br><button class= "button" type = "button" id="end">FINALIZAR</button><br/>
+    </div>
+    </section>
+
+    <footer>© Copyright 2021 - Todos los derechos reservados</footer>
+    
+    <script src="index.js" type="module"></script> <!--type="module" para activar files js-->
+
   </body>
 </html>

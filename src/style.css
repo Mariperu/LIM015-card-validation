@@ -1,0 +1,165 @@
+body {
+    margin: 0px; /*(cero px) para que empiece desde la esquina, define margenes de los 4 lados*/
+    font-family: 'Arimo', sans-serif; /*fuente letra, primera y seg opc*/   
+}
+
+header {
+    background-color:#03045E; /*https://coolors.co/palettes/trending*/
+    width: 100%;
+    height: 60px;
+}
+
+header img { /*logo*/
+    width: 120px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.section {/*link paleta: https://coolors.co/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8*/
+    background: linear-gradient( #03045E,#00B4D8);/*degradé */
+    display: flex; /*para que sea fácil la adaptación en distintos dispositivos**/
+    align-items: center; /*alineamiento vertical**/
+    justify-content: center;/*alineamiento horizontal**/
+    flex-direction: column;/*para que se ordenen los inputs y botones de arriba hacia abajo*/
+    padding: 0px 30px; /*espacio de relleno arriba, costados*/
+    min-height: calc(100vh - 100px); /*altura minima*/
+    /*vh:viewport-height, medida relativa en %, para el caso:100%=100vh*/
+    /* altura que mira el usuario menos "aprox" de tamaño de header+footer, para que se adecue*/
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1); /* 255=blanco, el 4to num es para dar opacidad*/
+    border: 2px solid white ; /*borde solido de 2px color blanco*/
+    border-radius: 30px; /*borde redondeado*/
+    color:white; /*color de latra*/
+    min-height: 400px;
+    width: 300px;
+    padding: 50px 68px 40px; /* relleno superior, costados , abajo*/
+}
+
+h1{
+    font-size: 23px;/*tamaño de letra*/
+    letter-spacing: 1px;/*espacio de letra a letra*/
+    margin-top: 7px;/*margen hacia arriba*/
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h2{
+    font-size: 16px;/*tamaño de letra*/
+    letter-spacing: 1px;/*espacio de letra a letra*/
+    margin-top: 30px;/*margen hacia arriba*/
+    margin-bottom: 10px;/*margen hacia abajo*/
+}
+#msValid{
+    font-size: 25px;
+    color:#48CAE4;
+    font-family: 'Arimo', sans-serif; /*fuente letra*/ 
+    text-align: center;
+    margin-top: 10px;
+}
+#banks{
+    font-size: 25px;
+    color:#48CAE4;
+    font-family: 'Arimo', sans-serif; /*fuente letra*/ 
+    text-align: center;
+    margin-top: 10px;
+}
+h3{
+    font-size: 30px;/*tamaño de letra*/
+    letter-spacing: 1px;/*espacio de letra a letra*/
+    margin-top: 15px;/*margen hacia arriba*/
+    margin-bottom: 10px;/*margen hacia abajo*/
+    color:#CAF0F8;
+    text-align: center;
+}
+h4{
+    font-size: 16px;/*tamaño de letra*/
+    letter-spacing: 1px;/*espacio de letra a letra*/
+    margin-top: 20px;/*margen hacia arriba*/
+    margin-bottom: 5px;/*margen hacia abajo*/
+    text-align: justify;
+}
+p{
+    font-size: 13px;/*tamaño de letra*/
+    margin-top: 15px;/*margen hacia arriba*/
+    margin-bottom: 10px;/*margen hacia abajo*/   
+}
+p1 {
+    font-size: 35px;/*tamaño de letra*/
+    letter-spacing: 1px;/*espacio de letra a letra*/
+    margin-top: 50px;/*margen hacia arriba*/
+    margin-left: 20px;
+    color:#CAF0F8;
+    text-align: center;
+    font-family: 'Arimo', sans-serif; /*fuente letra*/ 
+}
+.input {
+    font-size: 15px;/*tamaño de letra*/
+    min-width: 280px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    outline: none; /*no muestra el recuadro al acercarse al input*/
+    height: 25px;
+    margin-top: 5px;
+    padding: 6px;
+    font-family: 'Arimo', sans-serif; /*fuente letra*/ 
+    color: #ADE8F4; /*color de letra al escribir*/
+    font-weight: bold; /*para colocar en negrita*/
+    text-align: center;
+    /*letter-spacing: 0.5px; /*espacio entre letras*/
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.5); /*color de letra de elemento placeholder de inputs*/
+    padding: 10px;
+    font-weight: normal;/*fiente sin negrita, normal*/
+    text-align: center;
+}
+.input:focus{
+    background: rgba(255, 255, 255, 0.1); /*color para que se muestre al hacer clic y digitar en el input*/
+}
+/*.input:hover{ /*efecto de flote, aparece cuando pasas el cursor
+    background: #FDFFFC;
+}*/
+.button{
+    color: white;
+    font-size: 20px;
+    font-family: 'Arimo', sans-serif; /*fuente letra 1raopc, 2da opc*/ 
+    font-weight: bold;
+    letter-spacing: 1px;/*espacio de letra a letra*/
+    color:white; 
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px; /*margen hacia arriba*/
+    margin-left: 65px;
+    height: 35px;
+    width: 150px;
+    outline-color:white;/*color que resalta el borde al mover con tap*/
+}
+.button:hover{
+    background: #FF9F1C;
+    font-family: 'Arimo', sans-serif;
+    
+}
+.buttonClear{
+    color: white;
+    font-size: 14px;
+    font-family: 'Arimo', sans-serif; /*fuente letra*/ 
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px; /*margen hacia arriba*/
+    outline-color:white;/*color que resalta el borde al mover con tap*/
+}
+footer {
+    background-color: #00B4D8;
+    display:flex;
+    padding-top: 20px;
+    height: 50px;
+    width: 100%;/*para que se adecue a diversos anchos de pantalla*/
+    justify-content: center;/*alineamiento horizontal**/
+    color: white;
+    font-size: 12px;
+}
