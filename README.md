@@ -57,13 +57,14 @@ El banco previo acuerdo, lleva la tarjeta a tu casa y luego lo activas.
   5. Avanzar parte del contenido README.md
   5. Implementar contenido de mi proyecto empleando html semántico y teniendo
      en cuenta la experiencia del usuario.
-  6. Crear botones para dar funcionalidad a mi proyecto, empleando conceptos
-     del DOM en archivo index.js, para luego vincularlo al archivo validator.js.
+  6. Crear botones para dar funcionalidad al proyecto, empleando conceptos
+     del DOM en archivo index.js, para luego vincularlo a los archivos 
+     index.html y validator.js.
   7. Implementar la función para validar tarjeta, previamente estudiando 
-     conceptos de array, objetos, bucles, condicionales y métodos cómo .split()
-     y .reverse().
+     conceptos de array, objetos, bucles, condicionales, métodos cómo .split()
+     y .reverse(), y más.
   8. Implementar función de enmascarado de trajeta, incluyendo conceptos de array,
-     bucle for y métodos cómo .split() y .join().
+     bucle for, métodos cómo .split() y .join(), y más.
   10. Realizar el test para corroborar el corecto funcionamiento de las funciones,
       implementando código en el archivo test.
   11. Implementar contenido en CSS, estudiando previante conceptos para dar estilos
@@ -80,42 +81,42 @@ El banco previo acuerdo, lleva la tarjeta a tu casa y luego lo activas.
 
 #### HTML y CSS
 
-* [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] Uso de selectores de CSS.
-* [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
+* [X] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
+* [X] Uso de selectores de CSS.
+* [X] Construir tu aplicación respetando el diseño realizado (maquetación).
 
 #### DOM
 
-* [ ] Uso de selectores del DOM.
-* [ ] Manejo de eventos del DOM.
+* [X] Uso de selectores del DOM.
+* [X] Manejo de eventos del DOM.
 * [ ] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
 (appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
 
 #### JavaScript
 
-* [ ] Manipulación de strings.
-* [ ] Uso de condicionales (if-else | switch | operador ternario)
-* [ ] Uso de bucles (for | for..in | for..of | while)
-* [ ] Uso de funciones (parámetros | argumentos | valor de retorno)
-* [ ] Declaración correcta de variables (const & let)
+* [X] Manipulación de strings.
+* [X] Uso de condicionales (if-else | switch | operador ternario)
+* [X] Uso de bucles (for | for..in | for..of | while)
+* [X] Uso de funciones (parámetros | argumentos | valor de retorno)
+* [X] Declaración correcta de variables (const & let)
 
 #### Testing
 
-* [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
+* [X] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
 
 #### Estructura del código y guía de estilo
 
-* [ ] Organizar y dividir el código en módulos (Modularización)
-* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
-* [ ] Uso de linter (ESLINT)
+* [X] Organizar y dividir el código en módulos (Modularización)
+* [X] Uso de identificadores descriptivos (Nomenclatura | Semántica)
+* [X] Uso de linter (ESLINT)
 
 #### Git y GitHub
 
-* [ ] Uso de comandos de git (add | commit | pull | status | push)
-* [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
+* [X] Uso de comandos de git (add | commit | pull | status | push)
+* [X] Manejo de repositorios de GitHub (clone | fork | gh-pages)
 
 #### UX
 
-* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-* [ ] Crear prototipos para obtener feedback e iterar.
-* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
+* [X] Diseñar la aplicación pensando y entendiendo al usuario.
+* [X] Crear prototipos para obtener feedback e iterar.
+* [X] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
