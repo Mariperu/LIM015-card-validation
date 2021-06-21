@@ -7,7 +7,7 @@
 * [4. Primer prototipo](#4-primer-prototipo)
 * [5. Resumen de feedback recibido](#5-resumen-de-feedback-recibido)
 * [6. Prototipo final](#6-prototipo-final)
-* [7. Plan de acción y Objetivos de aprendizaje a priorizar](#7-plan-de-acción-y-objetivos-de-aprendizaje-a-prioriza)
+* [7. Plan de acción y Objetivos de aprendizaje a priorizar](#7-plan-de-acción-y-objetivos-de-aprendizaje-a-priorizar)
 ****
 ## 1. Resumen
 Página web para activar una tarjeta de crédito de forma virtual.
