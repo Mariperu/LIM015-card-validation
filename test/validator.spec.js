@@ -153,7 +153,7 @@ describe('validator', () => {
       expect(validator.getIssuer("6011959573038003")).toBe("Discover");
     });
     it('debería retornar "Banco desconocido" para ""', () => {   
-      expect(validator.getIssuer("")).toBe("Banco desconocido");
+      expect(validator.getIssuer("")).toBe("Desconocido");
     });
   });
 });

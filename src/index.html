@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>Tarjeta de crédito válida</title>
-  <!--Link a css-->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- link a google fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Lato&display=swap"
+   rel="stylesheet">
+   
 </head>
 
 <body>
@@ -17,6 +17,7 @@
   </header>
 
   <section class="mainSection">
+    
     <!--SECTION 1-->
     <section class="section" id="section1">
       <form id="form1">
@@ -32,11 +33,11 @@
         <h2>Número de tarjeta de crédito :</h2>
         <input class="input" type="text" id="tcId" 
         placeholder="Ingresa número de tajeta" maxlength="16">
-      </form>
 
-      <br><button class="button" type="button" id="validationBtn">VALIDAR</button><br/>
-      <br><button class="buttonClear" type="reset">Limpiar</button><br/>
-      
+        <button class="button" type="button" id="validationBtn">VALIDAR</button>
+        <br><button class="buttonClear" type="reset">Limpiar</button><br/>
+
+      </form>     
     </section>
 
     <!--SECTION 2-->
@@ -53,8 +54,9 @@
         <input class="input" type="password" id="key" placeholder="Ingresa la clave"
          maxlength="4">
 
-        <br><button class="button" type="button" id="sent">ENVIAR</button><br/>
+        <button class="button" type="button" id="sent">ENVIAR</button>
         <br><button class="buttonClear" type="reset">Limpiar</button><br/>
+        
       </form>
     </section>
 
@@ -65,15 +67,15 @@
       <h2 class= "phrase1"> &#127873; Línea de crédito:</h2>
       <h2 class = "phrase2" id="line"></h2>
 
-      <br><button class="button" type="button" id="end">FINALIZAR</button><br />
+      <button class="button" type="button" id="end">FINALIZAR</button>
     </section>
+
   </section>
 
   <footer>© Copyright 2021 - Todos los derechos reservados</footer>
 
   <script src="index.js" type="module"></script>
-  <!--type="module" para activar files js-->
+  <!--type="module" to activate fileS js-->
 
 </body>
-
 </html>

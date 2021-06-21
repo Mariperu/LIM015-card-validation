@@ -1,101 +1,69 @@
 body {
   margin: 0px;
-  /*(cero px) para que empiece desde la esquina, define margenes de los 4 lados*/
+  /*0px para que empiece desde la esquina, define margenes de los 4 lados*/
   font-family: 'Arimo', sans-serif;
-  /*fuente letra, primera y seg opc*/
 }
 
 header {
   background-color: #03045E;
-  /*https://coolors.co/palettes/trending*/
-  width: 100%;
   height: 60px;
 }
 
 header img {
-  /*logo*/
   width: 120px;
   margin-top: 12px;
   margin-left: 20px;
 }
 
 .mainSection {
-  /*link paleta: https://coolors.co/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8*/
   background: linear-gradient(#03045E, #00B4D8);
-  /*degradé */
   display: flex;
-  /*para que sea fácil la adaptación en distintos dispositivos**/
+  /*para fácil la adaptación en distn tamñ display*/
   align-items: center;
-  /*alineamiento vertical**/
-  justify-content: center;
-  /*alineamiento horizontal**/
+  /*alineamiento vertical*/
   flex-direction: column;
-  /*para que se ordenen los inputs y botones de arriba hacia abajo*/
-  padding: 0px 30px;
-  /*espacio de relleno arriba, costados*/
-  min-height: calc(100vh - 100px);
-  /*altura minima*/
-  /*vh:viewport-height, medida relativa en %, para el caso:100%=100vh*/
-  /* altura que mira el usuario menos "aprox" de tamaño de header+footer, para que se adecue*/
+  /*para ordenar inputs y botns de arriba hacia abajo*/
+  height: 550px;
 }
 
 .section {
   background-color: rgba(255, 255, 255, 0.1);
-  /* 255=blanco, el 4to num es para dar opacidad*/
   border: 2px solid white;
-  /*borde solido de 2px color blanco*/
-  border-radius: 30px;
-  /*borde redondeado*/
+  border-radius: 20px;
   color: white;
-  /*color de latra*/
-  min-height: 400px;
+  height: 550px;
   width: 300px;
-  padding: 50px 68px 40px;
-  /* relleno superior, costados , abajo*/
+  padding: 50px 60px 40px;
+  /*relleno superior, laterales, inferior*/
 }
 
 h1 {
   font-size: 23px;
-  /*tamaño de letra*/
   letter-spacing: 1px;
-  /*espacio de letra a letra*/
   margin-top: 7px;
-  /*margen hacia arriba*/
   margin-bottom: 40px;
   text-align: center;
 }
 
 h2 {
   font-size: 16px;
-  /*tamaño de letra*/
   letter-spacing: 1px;
-  /*espacio de letra a letra*/
   margin-top: 30px;
-  /*margen hacia arriba*/
   margin-bottom: 10px;
-  /*margen hacia abajo*/
 }
 
 h4 {
   font-size: 13px;
-  /*tamaño de letra*/
   font-weight: normal;
   margin-top: 15px;
-  /*margen hacia arriba*/
   margin-bottom: 10px;
-  /*margen hacia abajo*/
 }
 
 .phrase {
-  /*texto p */
   font-size: 16px;
-  /*tamaño de letra*/
   letter-spacing: 1px;
-  /*espacio de letra a letra*/
   margin-top: 20px;
-  /*margen hacia arriba*/
   margin-bottom: 5px;
-  /*margen hacia abajo*/
   text-align: justify;
 }
 
@@ -103,81 +71,66 @@ h4 {
   font-size: 25px;
   color: #48CAE4;
   font-family: 'Arimo', sans-serif;
-  /*fuente letra*/
   text-align: center;
   margin-top: 10px;
 }
 
 .phrase2 {
   font-size: 35px;
-  /*tamaño de letra*/
   letter-spacing: 1px;
-  /*espacio de letra a letra*/
   margin-top: 50px;
-  /*margen hacia arriba*/
   margin-left: 20px;
   color: #CAF0F8;
   text-align: center;
   font-family: 'Arimo', sans-serif;
-  /*fuente letra*/
 }
 
 .input {
   font-size: 15px;
-  /*tamaño de letra*/
-  min-width: 280px;
+  width: 280px;
   background-color: transparent;
   border: 1px solid white;
   border-radius: 30px;
   outline: none;
-  /*no muestra el recuadro al acercarse al input*/
+  /*no muestra recuadro al acercarse con tap*/
   height: 25px;
   margin-top: 5px;
   padding: 6px;
   font-family: 'Arimo', sans-serif;
-  /*fuente letra*/
-  color: #ADE8F4;
-  /*color de letra al escribir*/
+  color: white;
   font-weight: bold;
   /*para colocar en negrita*/
   text-align: center;
-  /*letter-spacing: 0.5px; /*espacio entre letras*/
 }
 
 ::placeholder {
   color: rgba(255, 255, 255, 0.5);
-  /*color de letra de elemento placeholder de inputs*/
   padding: 10px;
   font-weight: normal;
-  /*fiente sin negrita, normal*/
   text-align: center;
 }
 
 .input:focus {
-  background: rgba(255, 255, 255, 0.1);
-  /*color para que se muestre al hacer clic y digitar en el input*/
+  background: rgba(252, 186, 63, 0.2);
 }
 
 .button {
   color: white;
   font-size: 20px;
   font-family: 'Arimo', sans-serif;
-  /*fuente letra 1raopc, 2da opc*/
   font-weight: bold;
   letter-spacing: 1px;
-  /*espacio de letra a letra*/
   color: white;
   background-color: rgba(255, 255, 255, 0.3);
   border: none;
   border-radius: 20px;
   cursor: pointer;
   margin-top: 20px;
-  /*margen hacia arriba*/
   margin-left: 65px;
   height: 35px;
   width: 150px;
   outline-color: white;
-  /*color que resalta el borde al mover con tap*/
+  /*color de recuadro al acercarse con tap*/
 }
 
 .button:hover {
@@ -189,14 +142,19 @@ h4 {
   color: white;
   font-size: 14px;
   font-family: 'Arimo', sans-serif;
-  /*fuente letra*/
   background-color: transparent;
   border: none;
   cursor: pointer;
   margin-top: 5px;
-  /*margen hacia arriba*/
   outline-color: white;
-  /*color que resalta el borde al mover con tap*/
+  /*color de recuadro al acercarse con tap*/
+}
+
+.buttonClear:hover {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid white;
 }
 
 footer {
@@ -204,10 +162,8 @@ footer {
   display: flex;
   padding-top: 20px;
   height: 50px;
-  width: 100%;
-  /*para que se adecue a diversos anchos de pantalla*/
   justify-content: center;
-  /*alineamiento horizontal**/
+  /*alineamiento horizontal*/
   color: white;
   font-size: 12px;
 }
