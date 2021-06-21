@@ -12,9 +12,9 @@
 ## 1. Resumen
 Página web para activar una tarjeta de crédito de forma virtual.
 El banco previo acuerdo, lleva la tarjeta a tu casa y luego lo activas.
-***
+
 ![Proyecto_final](/src/src/Proyecto_final.png)
-***
+
 ## 2. Usuarios y objetivos
   * Los ususarios son personas quiénes desean utilizar una tarjeta de crédito.
   * El objetivo del producto es activar una tarjeta de credito de forma virtual.
@@ -65,13 +65,13 @@ El banco previo acuerdo, lleva la tarjeta a tu casa y luego lo activas.
      y .reverse(), y más.
   8. Implementar función de enmascarado de trajeta, incluyendo conceptos de array,
      bucle for, métodos cómo .split() y .join(), y más.
-  10. Realizar el test para corroborar el corecto funcionamiento de las funciones,
+  10. Realizar el test para corroborar el correcto funcionamiento de las funciones,
       implementando código en el archivo test.
   11. Implementar contenido en CSS, estudiando previante conceptos para dar estilos
       y sobre los selectores de CSS.
   12. Implementar la función para obtener la franquicia de la tarjeta, incluyendo 
       conceptos de array y condicionales.
-  13. Realizar el test para corroborar el corecto funcionamiento de las funciones,
+  13. Realizar el test para corroborar el correcto funcionamiento de las funciones,
       implementando código en el archivo test para cada objeto.
   14. Completar el README.
   15. Buscar información sobre como subir avance a GitHub y aplicarlo.
