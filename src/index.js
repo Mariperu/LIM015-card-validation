@@ -12,7 +12,7 @@ validationBtn.addEventListener('click', () => {
   const tcMask = validator.maskify(creditCardNumber);
   const tcName = validator.getIssuer(creditCardNumber); 
 
-  //Condiciones para los inputs
+  //Condiciones para inputs
   if (name == '' || name == Number(name)) {
     alert("Por favor ingresa tu nombre y apellido")
   } else if (dni == '' || dni != parseInt(dni) || dni.length < 8) {
@@ -21,16 +21,16 @@ validationBtn.addEventListener('click', () => {
     creditCardNumber.length < 14) {
     alert("Por favor ingresa el número de la tarjeta");
   } else {
-    if (tcValid) { //Si es VALIDA:
+    if (tcValid) { //Si es VALIDA / true:
            
-      document.getElementById("section1").style.display = "none";
-      document.getElementById("section2").style.display = "block";
+      document.getElementById("section1").style.display = "none";//ocultar
+      document.getElementById("section2").style.display = "block";//mostrar
 
       document.getElementById("onlyName").innerHTML = "¡ Hola " + name.toUpperCase() + " !";
       document.getElementById("franchise").innerHTML = tcName;
       document.getElementById("numMask").innerHTML = tcMask;
     
-    } else {//Si es INVALIDA:
+    } else {//Si es INVALIDA / false:
       alert("El número " + tcMask + " es inválido");
       document.getElementById("form1").reset(); //reset:método, limpia (restaura)
     }
@@ -50,10 +50,8 @@ sentBtn.addEventListener('click', () => {
   }
 });
 
-
-//Línea de 1000 a 10000
-const creditLine = (Math.floor(Math.random() * 10) + 1) * 1000;
-//random(num aleatorio de 0 a 0.99...), floor(redondea al menor)
+//Línea de crédito
+const creditLine = validator.creditLine;
 document.getElementById("line").innerHTML = "$ " + creditLine + " dólares";
 
 // BOTON FINALIZAR, VOLVER AL INICIO

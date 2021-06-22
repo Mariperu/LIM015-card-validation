@@ -54,7 +54,7 @@ const validator = {
     const issuer = creditCardNumber.split("");
     let franchise;
 
-    if ((issuer[0]) > 6) { //Primer dígito
+    if (issuer[0] > 6) { //Primer dígito
       franchise = "No existe";
     } else if (issuer[0] == 4) { //4
       franchise = "VISA";
@@ -98,7 +98,11 @@ const validator = {
       franchise = "Desconocido";
     }
     return franchise;
-  }
+  },
+
+  //KEY 4  creditLine (de 1000 a 10000)
+  creditLine: (Math.floor(Math.random() * 10) + 1) * 1000,
+  //random(num aleatorio de 0 a 0.99...), floor(redondea al menor)
 };
 
 export default validator;
