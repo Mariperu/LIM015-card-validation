@@ -6,13 +6,11 @@ validationBtn.addEventListener('click', () => {
 
   const name = document.getElementById("name").value;
   const dni = document.getElementById("dni").value;
-  const creditCardNumber = document.getElementById("tcId").value;
-  //Object:validator, Key:isValid, Value:func/mét. 
+  const creditCardNumber = document.getElementById("tcId").value; 
   const tcValid = validator.isValid(creditCardNumber);
   const tcMask = validator.maskify(creditCardNumber);
   const tcName = validator.getIssuer(creditCardNumber); 
 
-  //Condiciones para inputs
   if (name == '' || name == Number(name)) {
     alert("Por favor ingresa tu nombre y apellido")
   } else if (dni == '' || dni != parseInt(dni) || dni.length < 8) {
@@ -21,27 +19,27 @@ validationBtn.addEventListener('click', () => {
     creditCardNumber.length < 14) {
     alert("Por favor ingresa el número de la tarjeta");
   } else {
-    if (tcValid) { //Si es VALIDA / true:
+    if (tcValid) {//true
            
-      document.getElementById("section1").style.display = "none";//ocultar
-      document.getElementById("section2").style.display = "block";//mostrar
+      document.getElementById("section1").style.display = "none";
+      document.getElementById("section2").style.display = "block";
 
       document.getElementById("onlyName").innerHTML = "¡ Hola " + name.toUpperCase() + " !";
       document.getElementById("franchise").innerHTML = tcName;
       document.getElementById("numMask").innerHTML = tcMask;
     
-    } else {//Si es INVALIDA / false:
+    } else {//false
       alert("El número " + tcMask + " es inválido");
-      document.getElementById("form1").reset(); //reset:método, limpia (restaura)
+      document.getElementById("form1").reset(); 
     }
   }
 });
-//BOTON ENVIAR CLAVE 
+//BOTON ENVIAR clave 
 const sentBtn = document.getElementById('sent');
 sentBtn.addEventListener('click', () => {
 
   const key = document.getElementById("key").value;
-  //Condiciones para la clave
+  
   if (key == '' || key != Number(key) || key.length < 4) {
     alert("Por favor ingresa la clave")
   } else {
@@ -50,15 +48,14 @@ sentBtn.addEventListener('click', () => {
   }
 });
 
-//Línea de crédito
 const creditLine = validator.creditLine;
 document.getElementById("line").innerHTML = "$ " + creditLine + " dólares";
 
-// BOTON FINALIZAR, VOLVER AL INICIO
+//BOTON FINALIZAR
 const endBtn = document.getElementById('end');
 endBtn.addEventListener('click', () => {
   document.getElementById("section3").style.display = "none";
   document.getElementById("section1").style.display = "block";
-  document.getElementById("form1").reset();//reset:método, limpia (restaura)
+  document.getElementById("form1").reset();
   document.getElementById("form2").reset();
 });

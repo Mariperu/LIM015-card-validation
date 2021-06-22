@@ -1,60 +1,58 @@
 const validator = {
-  //KEY 1 isValid  
+  //KEY1
   isValid: function (creditCardNumber) {
-    const cardReverse = (creditCardNumber.split("")).reverse(); //Array
-    let suma1 = 0;
-    let suma2 = 0;
-    let suma3 = 0;
+    const cardReverse = (creditCardNumber.split("")).reverse();
 
-    //Suma 2 dígitos de un nro
+    let sum1 = 0;
+    let sum2 = 0;
+    let sum3 = 0;
+
+    //Suma dos dígitos
     function sumDig(num2D) {
-      const num = num2D % 10 + Math.floor(num2D / 10); //floor:redondea al menor
+      const num = num2D % 10 + Math.floor(num2D / 10); 
       return num;
     }
 
-    //Suma de números de posición par de Array [0,2,4...]
+    //Suma números de posición PAR
     for (let i = 0; i < cardReverse.length; i++) {
       if (i % 2 == 0) {
-        suma1 = suma1 + parseInt(cardReverse[i])
+        sum1 = sum1 + parseInt(cardReverse[i]);
       }
     }
-    //Suma de números de posición impar de Array [1,3,5...]
+    //Suma números de posición IMPAR
     for (let i = 0; i < cardReverse.length; i++) {
       if (i % 2 != 0) {
-        //Multiplicando*2
         const mult = parseInt(cardReverse[i]) * 2;
-        if (mult < 10) {
-          //Suma nros < 10 (que no tengan 2 dígitos)
-          suma2 = suma2 + mult;
-        } else {
-          //Suma nros >= 10, previamente suma sus 2 dígitos
-          suma3 = suma3 + sumDig(mult);
+        if (mult < 10) {//Nros de un dígito
+          sum2 = sum2 + mult;
+        } else {//Nros de dos dígitos 
+          sum3 = sum3 + sumDig(mult);
         }
       }
     }
-    const total = suma1 + suma2 + suma3;
-    //Suma total múltiplo de 10
+    const total = sum1 + sum2 + sum3;
+
     const corroboration = total % 10;
     return corroboration == 0 ? true : false;
   },
 
-  //KEY 2 maskify
+  //KEY2
   maskify: function (creditCardNumber) {
     const mask = creditCardNumber.split("");
-    // reemp. cada elemnto con #, excepto 4 últimos
+    
     for (let i = 0; i < mask.length - 4; i++) {
-      mask[i] = '#'
+      mask[i] = '#';
     }
-    const maskEnd = mask.join("")
+    const maskEnd = mask.join("");
     return maskEnd;
   },
 
-  //KEY 3 getIssuer 
+  //KEY3
   getIssuer: function (creditCardNumber) {
     const issuer = creditCardNumber.split("");
     let franchise;
 
-    if (issuer[0] > 6) { //Primer dígito
+    if (issuer[0] > 6) { //1er díg.
       franchise = "No existe";
     } else if (issuer[0] == 4) { //4
       franchise = "VISA";
@@ -73,7 +71,7 @@ const validator = {
       } else if (issuer[1] == 0) { //300 a 305
         if (issuer[2] == 0 || issuer[2] == 1 || issuer[2] == 2 ||
           issuer[2] == 3 || issuer[2] == 4 || issuer[2] == 5) {
-          franchise = "Diners Club /Carte Blanche"
+          franchise = "Diners Club /Carte Blanche";
         }
       } else { //3
         franchise = "JCB";
@@ -100,9 +98,8 @@ const validator = {
     return franchise;
   },
 
-  //KEY 4  creditLine (de 1000 a 10000)
+  //KEY4  
   creditLine: (Math.floor(Math.random() * 10) + 1) * 1000,
-  //random(num aleatorio de 0 a 0.99...), floor(redondea al menor)
 };
 
 export default validator;

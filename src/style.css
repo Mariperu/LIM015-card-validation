@@ -1,6 +1,5 @@
 body {
   margin: 0px;
-  /*0px para que empiece desde la esquina, define margenes de los 4 lados*/
   font-family: 'Arimo', sans-serif;
 }
 
@@ -15,14 +14,14 @@ header img {
   margin-left: 20px;
 }
 
-.mainSection {
+main {
   background: linear-gradient(#03045E, #00B4D8);
   display: flex;
-  /*para fácil la adaptación en distn tamñ display*/
+  /*fácil adaptación*/
   align-items: center;
   /*alineamiento vertical*/
   flex-direction: column;
-  /*para ordenar inputs y botns de arriba hacia abajo*/
+  /*ordena contenido de arriba hacia abajo*/
   height: 550px;
 }
 
@@ -34,7 +33,6 @@ header img {
   height: 550px;
   width: 300px;
   padding: 50px 60px 40px;
-  /*relleno superior, laterales, inferior*/
 }
 
 h1 {
@@ -75,7 +73,7 @@ h4 {
   margin-top: 10px;
 }
 
-.phrase2 {
+.phrase2 { /*line*/
   font-size: 35px;
   letter-spacing: 1px;
   margin-top: 50px;
@@ -92,14 +90,12 @@ h4 {
   border: 1px solid white;
   border-radius: 30px;
   outline: none;
-  /*no muestra recuadro al acercarse con tap*/
   height: 25px;
   margin-top: 5px;
   padding: 6px;
   font-family: 'Arimo', sans-serif;
   color: white;
   font-weight: bold;
-  /*para colocar en negrita*/
   text-align: center;
 }
 
@@ -130,7 +126,6 @@ h4 {
   height: 35px;
   width: 150px;
   outline-color: white;
-  /*color de recuadro al acercarse con tap*/
 }
 
 .button:hover {
@@ -147,7 +142,6 @@ h4 {
   cursor: pointer;
   margin-top: 5px;
   outline-color: white;
-  /*color de recuadro al acercarse con tap*/
 }
 
 .buttonClear:hover {
