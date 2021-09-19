@@ -3,12 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Tarjeta de crédito válida</title>
+  <title>BBVA Activación</title>
+  <link rel="icon" href="src/tc.ico">
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Lato&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Lato&display=swap"
-   rel="stylesheet">
-   
 </head>
 
 <body>
@@ -21,55 +20,52 @@
       <form id="form1">
         <h1>Activa tu tarjeta de Crédito</h1>
         <h2>Nombre y apellido:</h2>
-        <input class="input" type="text" id="name" 
-        placeholder="Ingresa tu nombre y apellido aquí" maxlength="20">
+        <input class="input" type="text" id="name" placeholder="Ingresa tu nombre y apellido aquí" maxlength="20">
 
         <h2>Número de DNI:</h2>
-        <input class="input" type="text" id="dni" 
-        placeholder="Ingresa tu DNI aquí" maxlength="8">
+        <input class="input" type="text" id="dni" placeholder="Ingresa tu DNI aquí" maxlength="8">
 
         <h2>Número de tarjeta de crédito :</h2>
-        <input class="input" type="text" id="tcId" 
-        placeholder="Ingresa número de tajeta" maxlength="16">
+        <input class="input" type="text" id="tcId" placeholder="Ingresa número de tajeta" maxlength="16">
 
         <button class="button" type="button" id="validationBtn">VALIDAR</button>
-        <br><button class="buttonClear" type="reset">Limpiar</button><br/>
+        <br><button class="buttonClear" type="reset">Limpiar</button><br />
 
-      </form>     
+      </form>
     </section>
 
     <section hidden class="section" id="section2">
       <form id="form2">
         <h1 id="onlyName"></h1>
-        <h3 class = "phrase">La tarjeta:</h3>
-        <h2 class = "phrase1" id="franchise"></h2>
-        <h2 class = "phrase1" id="numMask"></h2>
-        <h3 class = "phrase">es:</h3>
-        <h2 class = "phrase1">VÁLIDA</h2>
+        <h3 class="phrase">La tarjeta:</h3>
+        <h2 class="phrase1" id="franchise"></h2>
+        <h2 class="phrase1" id="numMask"></h2>
+        <h3 class="phrase">es:</h3>
+        <h2 class="phrase1">VÁLIDA</h2>
         <h4>Para continuar con la activación,
           por favor ingresa la clave de 4 dígitos que llegó a tu celular:</h4>
-        <input class="input" type="password" id="key" placeholder="Ingresa la clave"
-         maxlength="4">
+        <input class="input" type="password" id="key" placeholder="Ingresa la clave" maxlength="4">
 
         <button class="button" type="button" id="sent">ENVIAR</button>
-        <br><button class="buttonClear" type="reset">Limpiar</button><br/>
-        
+        <br><button class="buttonClear" type="reset">Limpiar</button><br />
+
       </form>
     </section>
 
     <section hidden class="section" id="section3">
-      <h1 class = "phrase1">¡Felicitaciones!</h1>
+      <h1 class="phrase1">¡Felicitaciones!</h1>
       <h1>Se activó tu tarjeta de crédito</h1>
-      <h2 class= "phrase1"> &#127873; Línea de crédito:</h2>
-      <h2 class = "phrase2" id="line"></h2>
+      <h2 class="phrase1"> &#127873; Línea de crédito:</h2>
+      <h2 class="phrase2" id="line"></h2>
 
       <button class="button" type="button" id="end">FINALIZAR</button>
     </section>
   </main>
 
-  <footer>© Copyright 2021 - Todos los derechos reservados</footer>
+  <footer>©2021 Developed by Maritza Rodriguez</footer>
 
   <script src="index.js" type="module"></script>
 
 </body>
+
 </html>

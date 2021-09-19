@@ -118,6 +118,7 @@ h4 {
   letter-spacing: 1px;
   color: white;
   background-color: rgba(255, 255, 255, 0.3);
+  *background-color: #FF9F1C;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -130,7 +131,9 @@ h4 {
 
 .button:hover {
   background: #FF9F1C;
+  *background: rgba(255, 255, 255, 0.3);
   font-family: 'Arimo', sans-serif;
+  *color: #FF9F1C;
 }
 
 .buttonClear {
@@ -142,13 +145,17 @@ h4 {
   cursor: pointer;
   margin-top: 5px;
   outline-color: white;
+  text-decoration:underline;
+  letter-spacing: 0.5px;
+  
 }
 
 .buttonClear:hover {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid white;
+  *border-bottom: 1px solid white;
+  color: #FF9F1C;
 }
 
 footer {
