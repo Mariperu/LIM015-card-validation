@@ -10,7 +10,7 @@
 * [7. Plan de acción y Objetivos de aprendizaje a priorizar](#7-plan-de-acción-y-objetivos-de-aprendizaje-a-priorizar)
 ****
 ## 1. Resumen
-Página web para activar una tarjeta de crédito de forma virtual.
+Página web para activar una tarjeta de crédito en forma virtual.
 
 ![Proyecto_final](/src/src/Proyecto_final.png)
 
