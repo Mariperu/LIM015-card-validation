@@ -1,41 +1,43 @@
-body {
+* {
   margin: 0px;
-  font-family: 'Arimo', sans-serif;
+  padding: 0px;
+  font-family: "Arimo", sans-serif;
 }
 
 header {
-  background-color: #03045E;
+  background-color: #03045e;
+  width: 100%;
   height: 60px;
 }
 
 header img {
   width: 120px;
-  margin-top: 12px;
-  margin-left: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 main {
-  background: linear-gradient(#03045E, #00B4D8);
+  background: linear-gradient(#03045e, #00b4d8);
   display: flex;
   /*fácil adaptación*/
   align-items: center;
   /*alineamiento vertical*/
   flex-direction: column;
   /*ordena contenido de arriba hacia abajo*/
-  height: 550px;
 }
 
-.section {
+/******* FORM ****/
+.formContainer {
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid white;
   border-radius: 20px;
   color: white;
-  height: 550px;
-  width: 300px;
+  height: 75vh;
+  width: 23%;
   padding: 50px 60px 40px;
 }
 
-h1 {
+.formContent h1 {
   font-size: 23px;
   letter-spacing: 1px;
   margin-top: 7px;
@@ -43,49 +45,16 @@ h1 {
   text-align: center;
 }
 
-h2 {
+.formContent h2 {
   font-size: 16px;
   letter-spacing: 1px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-h4 {
-  font-size: 13px;
-  font-weight: normal;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.phrase {
-  font-size: 16px;
-  letter-spacing: 1px;
-  margin-top: 20px;
-  margin-bottom: 5px;
-  text-align: justify;
-}
-
-.phrase1 {
-  font-size: 25px;
-  color: #48CAE4;
-  font-family: 'Arimo', sans-serif;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.phrase2 { /*line*/
-  font-size: 35px;
-  letter-spacing: 1px;
-  margin-top: 50px;
-  margin-left: 20px;
-  color: #CAF0F8;
-  text-align: center;
-  font-family: 'Arimo', sans-serif;
-}
-
-.input {
+.formContent input {
   font-size: 15px;
-  width: 280px;
+  width: 100%;
   background-color: transparent;
   border: 1px solid white;
   border-radius: 30px;
@@ -93,78 +62,307 @@ h4 {
   height: 25px;
   margin-top: 5px;
   padding: 6px;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
   color: white;
   font-weight: bold;
   text-align: center;
+  letter-spacing: 1px;
 }
 
-::placeholder {
+.formContent input::placeholder {
   color: rgba(255, 255, 255, 0.5);
   padding: 10px;
   font-weight: normal;
   text-align: center;
+  letter-spacing: 0px;
 }
 
-.input:focus {
-  background: rgba(252, 186, 63, 0.2);
+.formContent input:focus {
+  background: rgba(248, 190, 82, 0.2);
 }
 
-.button {
+.formContent section {
+  display: flex;
+  justify-content: center;
+}
+.btnYellow {
   color: white;
   font-size: 20px;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
   color: white;
-  background-color: rgba(255, 255, 255, 0.3);
-  *background-color: #FF9F1C;
+  background-color: #ff9f1c;
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  margin-top: 20px;
-  margin-left: 65px;
+  margin-top: 30px;
   height: 35px;
   width: 150px;
   outline-color: white;
 }
 
-.button:hover {
-  background: #FF9F1C;
-  *background: rgba(255, 255, 255, 0.3);
-  font-family: 'Arimo', sans-serif;
-  *color: #FF9F1C;
+.btnYellow:hover {
+  background: #03045e;
+  color: #ffffff;
+  font-family: "Arimo", sans-serif;
+  font-weight: bold;
 }
 
 .buttonClear {
   color: white;
-  font-size: 14px;
-  font-family: 'Arimo', sans-serif;
+  font-size: 15px;
+  font-family: "Arimo", sans-serif;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  margin-top: 5px;
+  margin-top: 10px;
   outline-color: white;
-  text-decoration:underline;
+  text-decoration: underline;
   letter-spacing: 0.5px;
-  
 }
 
 .buttonClear:hover {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  *border-bottom: 1px solid white;
-  color: #FF9F1C;
+  color: #ff9f1c;
+}
+
+/****** CARD INFORMATION*****/
+.cardInformation h1 {
+  font-size: 23px;
+  letter-spacing: 1px;
+  margin-top: 7px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.cardInformation h2 {
+  font-size: 25px;
+  color: #48cae4;
+  font-family: "Arimo", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cardInformation h3 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+.cardInformation h4 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+
+.cardInformation input {
+  font-size: 15px;
+  width: 98%;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 30px;
+  outline: none;
+  height: 25px;
+  margin-top: 5px;
+  padding: 6px;
+  font-family: "Arimo", sans-serif;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.cardInformation input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0px;
+}
+
+.cardInformation input:focus {
+  background: rgba(248, 190, 82, 0.2);
+}
+
+.cardInformation section {
+  display: flex;
+  justify-content: center;
+}
+
+/***** CREDIT LINE ***/
+.creditLine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.creditLine h1 {
+  font-size: 25px;
+  color: #48cae4;
+  font-family: "Arimo", sans-serif;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.creditLine h2 {
+  font-size: 35px;
+  letter-spacing: 1px;
+  margin-top: 50px;
+  color: #caf0f8;
+  text-align: center;
+  font-family: "Arimo", sans-serif;
 }
 
 footer {
-  background-color: #00B4D8;
+  background-color: #00b4d8;
   display: flex;
-  padding-top: 20px;
-  height: 50px;
   justify-content: center;
-  /*alineamiento horizontal*/
+  padding-top: 10px;
+  height: 40px;
   color: white;
   font-size: 12px;
+}
+
+@media screen and (min-width: 260px) {
+  @media screen and (max-width: 800px) {
+    header {
+      height: 70px;
+    }
+
+    header img {
+      width: 120px;
+      padding-top: 20px;
+      padding-left: 20px;
+    }
+
+    main {
+      height: 100vh;
+    }
+    /******* FORM ****/
+    .formContainer {
+      border-radius: 20px;
+      width: 60%;
+      padding: 50px 50px 50px 50px;
+      height: 80vh;
+      margin-top: 40px;
+    }
+
+    .formContent h1 {
+      font-size: 20px;
+      letter-spacing: 1px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    .formContent h2 {
+      font-size: 18px;
+      letter-spacing: 1px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    .formContent input {
+      font-size: 17px;
+      width: 98%;
+      border-radius: 25px;
+      height: 30px;
+      margin-top: 10px;
+      padding: 5px;
+    }
+
+    .formContent input::placeholder {
+      padding: 5px;
+      letter-spacing: 0px;
+      font-size: 14px;
+    }
+
+    .btnYellow {
+      font-size: 20px;
+      letter-spacing: 1px;
+      border-radius: 25px;
+      margin-top: 25px;
+      height: 40px;
+      width: 160px;
+      padding: 5px;
+    }
+
+    .buttonClear {
+      font-size: 18px;
+      margin: 10px 10px 10px 10px;
+      letter-spacing: 0.5px;
+    }
+
+    /****** CARD INFORMATION*****/
+    .cardInformation h1 {
+      font-size: 20px;
+      letter-spacing: 1px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    .cardInformation h2 {
+      font-size: 18px;
+      letter-spacing: 1px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    .cardInformation h3 {
+      font-size: 17px;
+      letter-spacing: 1px;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+
+    .cardInformation h4 {
+      font-size: 13px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      line-height: 18px;
+      letter-spacing: 0.5px;
+    }
+
+    .cardInformation input {
+      font-size: 17px;
+      width: 98%;
+      border-radius: 25px;
+      height: 30px;
+      margin-top: 10px;
+      padding: 5px;
+    }
+
+    .cardInformation input::placeholder {
+      padding: 5px;
+      letter-spacing: 0px;
+      font-size: 17px;
+    }
+
+    /***** CREDIT LINE ***/
+
+    .creditLine h1 {
+      font-size: 30px;
+      letter-spacing: 1px;
+      margin-top: 60px;
+      margin-bottom: 50px;
+    }
+
+    .creditLine h2 {
+      font-size: 25px;
+      letter-spacing: 1px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      padding-top: 10px;
+      height: 30px;
+      font-size: 14px;
+    }
+  }
 }
