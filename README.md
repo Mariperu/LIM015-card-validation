@@ -1,4 +1,4 @@
-# Activación de tarjeta de crédito
+# Activación de tarjeta de crédito 💳
 
 ## Índice
 
@@ -14,8 +14,7 @@
 
 ## 1. Resumen
 
-Página web para activar una tarjeta de crédito de forma virtual.
-El banco previo acuerdo, lleva la tarjeta a tu casa y luego lo activas.
+Página web para activar una tarjeta de crédito en forma virtual.
 
 ![Proyecto_final](./src/assets/Proyecto_final.png)
 
