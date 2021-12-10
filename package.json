@@ -1,6 +1,6 @@
 {
   "name": "card-validation",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "main": "src/index.html",
   "license": "MIT",
   "scripts": {
@@ -21,6 +21,6 @@
     "htmlhint": "^0.14.1",
     "jest": "^26.6.1",
     "opener": "^1.5.1",
-    "serve": "^12.0.1"
+    "serve": "^13.0.2"
   }
 }
