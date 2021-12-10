@@ -19,11 +19,9 @@ header img {
 main {
   background: linear-gradient(#03045e, #00b4d8);
   display: flex;
-  /*fácil adaptación*/
   align-items: center;
-  /*alineamiento vertical*/
   flex-direction: column;
-  /*ordena contenido de arriba hacia abajo*/
+  height: 100vh;
 }
 
 /******* FORM ****/
@@ -32,9 +30,9 @@ main {
   border: 2px solid white;
   border-radius: 20px;
   color: white;
-  height: 75vh;
-  width: 23%;
-  padding: 50px 60px 40px;
+  height: 500px;
+  width: 25%;
+  padding: 50px 60px 40px 60px;
 }
 
 .formContent h1 {
@@ -229,140 +227,127 @@ footer {
   font-size: 12px;
 }
 
-@media screen and (min-width: 260px) {
-  @media screen and (max-width: 800px) {
-    header {
-      height: 70px;
-    }
+@media screen and (max-width: 800px) {
+  /* @media screen and (max-width: 800px) { */
 
-    header img {
-      width: 120px;
-      padding-top: 20px;
-      padding-left: 20px;
-    }
+  /******* FORM ****/
+  .formContainer {
+    border-radius: 20px;
+    width: 80%;
+    padding: 50px 50px 50px 50px;
+    height: 500px;
+    margin-top: 40px;
+  }
 
-    main {
-      height: 100vh;
-    }
-    /******* FORM ****/
-    .formContainer {
-      border-radius: 20px;
-      width: 60%;
-      padding: 50px 50px 50px 50px;
-      height: 80vh;
-      margin-top: 40px;
-    }
+  .formContent h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
 
-    .formContent h1 {
-      font-size: 20px;
-      letter-spacing: 1px;
-      margin-top: 20px;
-      margin-bottom: 40px;
-    }
+  .formContent h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
 
-    .formContent h2 {
-      font-size: 18px;
-      letter-spacing: 1px;
-      margin-top: 15px;
-      margin-bottom: 10px;
-    }
+  .formContent input {
+    font-size: 17px;
+    width: 98%;
+    border-radius: 25px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 5px;
+  }
 
-    .formContent input {
-      font-size: 17px;
-      width: 98%;
-      border-radius: 25px;
-      height: 30px;
-      margin-top: 10px;
-      padding: 5px;
-    }
+  .formContent input::placeholder {
+    padding: 5px;
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
 
-    .formContent input::placeholder {
-      padding: 5px;
-      letter-spacing: 0px;
-      font-size: 14px;
-    }
+  .btnYellow {
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    margin-top: 25px;
+    height: 40px;
+    width: 160px;
+    padding: 5px;
+  }
 
-    .btnYellow {
-      font-size: 20px;
-      letter-spacing: 1px;
-      border-radius: 25px;
-      margin-top: 25px;
-      height: 40px;
-      width: 160px;
-      padding: 5px;
-    }
+  .buttonClear {
+    font-size: 18px;
+    margin: 10px 10px 10px 10px;
+    letter-spacing: 0.5px;
+  }
 
-    .buttonClear {
-      font-size: 18px;
-      margin: 10px 10px 10px 10px;
-      letter-spacing: 0.5px;
-    }
+  /****** CARD INFORMATION*****/
+  .cardInformation h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
 
-    /****** CARD INFORMATION*****/
-    .cardInformation h1 {
-      font-size: 20px;
-      letter-spacing: 1px;
-      margin-top: 20px;
-      margin-bottom: 40px;
-    }
+  .cardInformation h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
 
-    .cardInformation h2 {
-      font-size: 18px;
-      letter-spacing: 1px;
-      margin-top: 15px;
-      margin-bottom: 10px;
-    }
+  .cardInformation h3 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
 
-    .cardInformation h3 {
-      font-size: 17px;
-      letter-spacing: 1px;
-      margin-top: 20px;
-      margin-bottom: 5px;
-    }
+  .cardInformation h4 {
+    font-size: 13px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+  }
 
-    .cardInformation h4 {
-      font-size: 13px;
-      margin-top: 25px;
-      margin-bottom: 10px;
-      line-height: 18px;
-      letter-spacing: 0.5px;
-    }
+  .cardInformation input {
+    font-size: 17px;
+    width: 98%;
+    border-radius: 25px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 5px;
+  }
 
-    .cardInformation input {
-      font-size: 17px;
-      width: 98%;
-      border-radius: 25px;
-      height: 30px;
-      margin-top: 10px;
-      padding: 5px;
-    }
+  .cardInformation input::placeholder {
+    padding: 5px;
+    letter-spacing: 0px;
+    font-size: 17px;
+  }
 
-    .cardInformation input::placeholder {
-      padding: 5px;
-      letter-spacing: 0px;
-      font-size: 17px;
-    }
+  /***** CREDIT LINE ***/
 
-    /***** CREDIT LINE ***/
+  .creditLine h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
 
-    .creditLine h1 {
-      font-size: 30px;
-      letter-spacing: 1px;
-      margin-top: 60px;
-      margin-bottom: 50px;
-    }
+  .creditLine h2 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 
-    .creditLine h2 {
-      font-size: 25px;
-      letter-spacing: 1px;
-      margin-top: 20px;
-      margin-bottom: 10px;
-    }
-
-    footer {
-      padding-top: 10px;
-      height: 30px;
-      font-size: 14px;
-    }
+  footer {
+    padding-top: 10px;
+    height: 30px;
+    font-size: 14px;
   }
 }
