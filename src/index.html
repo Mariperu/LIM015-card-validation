@@ -4,61 +4,68 @@
 <head>
   <meta charset="utf-8">
   <title>BBVA Activación</title>
-  <link rel="icon" href="src/tc.ico">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./assets/tc.ico">
+  <link rel="stylesheet" href="style2.css" />
   <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Lato&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
   <header>
-    <img src="src/logo.png" alt="logo">
+    <img src="./assets/logo.png" alt="logo">
   </header>
 
   <main>
-    <section class="section" id="section1">
-      <form id="form1">
+    <section class="formContainer" id="section1">
+      <form id="form1" class="formContent">
         <h1>Activa tu tarjeta de Crédito</h1>
         <h2>Nombre y apellido:</h2>
-        <input class="input" type="text" id="name" placeholder="Ingresa tu nombre y apellido aquí" maxlength="20">
+        <input type="text" id="name" placeholder="Ingresa tu nombre y apellido" maxlength="20">
 
         <h2>Número de DNI:</h2>
-        <input class="input" type="text" id="dni" placeholder="Ingresa tu DNI aquí" maxlength="8">
+        <input type="text" id="dni" placeholder="Ingresa tu DNI" maxlength="8">
 
         <h2>Número de tarjeta de crédito :</h2>
-        <input class="input" type="text" id="tcId" placeholder="Ingresa número de tajeta" maxlength="16">
+        <input type="text" id="tcId" placeholder="Ingresa número de tajeta" maxlength="16">
 
-        <button class="button" type="button" id="validationBtn">VALIDAR</button>
+        <section>
+        <button class="btnYellow" type="button" id="validationBtn">VALIDAR</button>
+      </section>
         <br><button class="buttonClear" type="reset">Limpiar</button><br />
 
       </form>
     </section>
 
-    <section hidden class="section" id="section2">
-      <form id="form2">
+    <section hidden class="formContainer" id="section2">
+      <form class="cardInformation" id="form2">
         <h1 id="onlyName"></h1>
-        <h3 class="phrase">La tarjeta:</h3>
-        <h2 class="phrase1" id="franchise"></h2>
-        <h2 class="phrase1" id="numMask"></h2>
-        <h3 class="phrase">es:</h3>
-        <h2 class="phrase1">VÁLIDA</h2>
+        <h3>La tarjeta:</h3>
+        <h2 id="franchise"></h2>
+        <h2 id="numMask"></h2>
+        <h3>es:</h3>
+        <h2>VÁLIDA</h2>
         <h4>Para continuar con la activación,
           por favor ingresa la clave de 4 dígitos que llegó a tu celular:</h4>
-        <input class="input" type="password" id="key" placeholder="Ingresa la clave" maxlength="4">
+        <input type="password" id="key" placeholder="Ingresa la clave" maxlength="4">
 
-        <button class="button" type="button" id="sent">ENVIAR</button>
+        <section>
+        <button class="btnYellow" type="button" id="sent">ENVIAR</button>
+        </section>
+        
         <br><button class="buttonClear" type="reset">Limpiar</button><br />
 
+        </section>
       </form>
-    </section>
 
-    <section hidden class="section" id="section3">
-      <h1 class="phrase1">¡Felicitaciones!</h1>
+    <section hidden class="formContainer" id="section3">
+      <section class="creditLine">
+      <h1>¡Felicitaciones!</h1>
       <h1>Se activó tu tarjeta de crédito</h1>
-      <h2 class="phrase1"> &#127873; Línea de crédito:</h2>
-      <h2 class="phrase2" id="line"></h2>
+      <h2> &#127873; Línea de crédito:</h2>
+      <h2 id="line"></h2>
 
-      <button class="button" type="button" id="end">FINALIZAR</button>
+      <button class="btnYellow" type="button" id="end">FINALIZAR</button>
+    </section>
     </section>
   </main>
 
