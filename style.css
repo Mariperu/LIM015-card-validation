@@ -16,21 +16,24 @@ header img {
   padding-left: 20px;
 }
 
-main {
+body {
   background: linear-gradient(#03045e, #00b4d8);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
 }
-
 /******* FORM ****/
 .formContainer {
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid white;
   border-radius: 20px;
   color: white;
-  height: 500px;
+  height: 550px;
   width: 25%;
   padding: 50px 60px 40px 60px;
 }
@@ -218,136 +221,10 @@ main {
 }
 
 footer {
-  background-color: #00b4d8;
   display: flex;
   justify-content: center;
   padding-top: 10px;
   height: 40px;
   color: white;
   font-size: 12px;
-}
-
-@media screen and (max-width: 800px) {
-  /* @media screen and (max-width: 800px) { */
-
-  /******* FORM ****/
-  .formContainer {
-    border-radius: 20px;
-    width: 80%;
-    padding: 50px 50px 50px 50px;
-    height: 500px;
-    margin-top: 40px;
-  }
-
-  .formContent h1 {
-    font-size: 20px;
-    letter-spacing: 1px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-  }
-
-  .formContent h2 {
-    font-size: 18px;
-    letter-spacing: 1px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-  }
-
-  .formContent input {
-    font-size: 17px;
-    width: 98%;
-    border-radius: 25px;
-    height: 30px;
-    margin-top: 10px;
-    padding: 5px;
-  }
-
-  .formContent input::placeholder {
-    padding: 5px;
-    letter-spacing: 0px;
-    font-size: 14px;
-  }
-
-  .btnYellow {
-    font-size: 20px;
-    letter-spacing: 1px;
-    border-radius: 25px;
-    margin-top: 25px;
-    height: 40px;
-    width: 160px;
-    padding: 5px;
-  }
-
-  .buttonClear {
-    font-size: 18px;
-    margin: 10px 10px 10px 10px;
-    letter-spacing: 0.5px;
-  }
-
-  /****** CARD INFORMATION*****/
-  .cardInformation h1 {
-    font-size: 20px;
-    letter-spacing: 1px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-  }
-
-  .cardInformation h2 {
-    font-size: 18px;
-    letter-spacing: 1px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-  }
-
-  .cardInformation h3 {
-    font-size: 17px;
-    letter-spacing: 1px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-  }
-
-  .cardInformation h4 {
-    font-size: 13px;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    line-height: 18px;
-    letter-spacing: 0.5px;
-  }
-
-  .cardInformation input {
-    font-size: 17px;
-    width: 98%;
-    border-radius: 25px;
-    height: 30px;
-    margin-top: 10px;
-    padding: 5px;
-  }
-
-  .cardInformation input::placeholder {
-    padding: 5px;
-    letter-spacing: 0px;
-    font-size: 17px;
-  }
-
-  /***** CREDIT LINE ***/
-
-  .creditLine h1 {
-    font-size: 30px;
-    letter-spacing: 1px;
-    margin-top: 60px;
-    margin-bottom: 50px;
-  }
-
-  .creditLine h2 {
-    font-size: 25px;
-    letter-spacing: 1px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  footer {
-    padding-top: 10px;
-    height: 30px;
-    font-size: 14px;
-  }
 }
